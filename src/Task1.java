@@ -53,7 +53,7 @@ public class Task1 {
                 currentPosition = (currentPosition + number) % 100;
             }
             else {
-                currentPosition = Math.abs(currentPosition - number);
+                currentPosition -= number;
                 // -1 because 99 is the last valid value before the dial turns back to 0.
                 // Symmetric to 100 when turning right
                 while (currentPosition < -1 ) {
